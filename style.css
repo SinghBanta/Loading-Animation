@@ -1,0 +1,139 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(8, 8, 48);
+}
+
+.loader{
+    /* border:2px solid black; */
+    height:600px;
+    width: 600px;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+
+    
+}
+
+.container1{
+    /* border:2px solid black; */
+    width:50px;
+    height:50px;
+    position:absolute;
+    top: 100px;
+    border-radius: 50%;
+    animation-name: orbit;
+    animation-duration: 2s;
+    transition-timing-function: cubic-bezier(1, -0.5, 1, 1);
+    animation-iteration-count: infinite;
+    
+ 
+}
+
+.container2{
+    /* border:2px solid black; */
+    width:50px;
+    height:50px;
+    position:absolute;
+    right:317px;
+    bottom:420px;
+    border-radius: 50%;
+    animation-name: orbit;
+    animation-duration: 2s;
+    transition-timing-function: cubic-bezier(1, -0.5, 1, 1);
+    animation-iteration-count: infinite;
+ 
+}
+
+.container3{
+    /* border:2px solid black; */
+    width:50px;
+    height:50px;
+    position:absolute;
+    border-radius: 50%;
+    top:130px;
+    left:316px;
+    
+    animation-name: orbit;
+    animation-duration: 2s;
+    transition-timing-function: cubic-bezier(1, -0.5, 1, 1);
+    animation-iteration-count: infinite;
+    
+ 
+}
+
+
+.container4{
+    /* border:2px solid black; */
+    width:50px;
+    height:50px;
+    position:absolute;
+    border-radius: 50%;
+    top: 158px;
+    right: 276px;
+    animation-name: orbit;
+    animation-duration: 2s;
+    transition-timing-function: cubic-bezier(1, -0.5, 1, 1);
+    animation-iteration-count: infinite;
+ 
+}
+
+.circle1{
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    /* border:2px solid black; */
+    margin-left:14px;
+    background-color: chocolate;
+}
+
+.circle2{
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    /* border:2px solid black; */
+    margin-left:29px;
+    margin-top:14px;
+    background-color: chocolate;
+}
+
+
+.circle3{
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    /* border:2px solid black; */
+    margin-top:14px;
+    background-color: chocolate;
+}
+
+
+.circle4{
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    /* border:2px solid black; */
+    margin-left: 14px;
+    margin-top: 29px;
+    background-color: chocolate;
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
